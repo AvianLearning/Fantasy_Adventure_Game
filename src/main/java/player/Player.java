@@ -1,3 +1,8 @@
+package player;
+
+import creature.Creature;
+import treasure.Treasure;
+
 import java.util.ArrayList;
 
 public abstract class Player {

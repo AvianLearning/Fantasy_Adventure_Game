@@ -1,3 +1,5 @@
+package treasure;
+
 public enum Treasure {
     PEARL(2),
     SILVER(3),

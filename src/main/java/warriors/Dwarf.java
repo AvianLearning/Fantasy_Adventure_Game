@@ -1,6 +1,6 @@
 package warriors;
 
-import Player;
+import player.Player;
 import components.Weapon;
 
 public class Dwarf extends Player {
@@ -10,5 +10,9 @@ public class Dwarf extends Player {
     public Dwarf(String name, int healthPoints, Weapon weaponInHand) {
         super(name, healthPoints);
         this.weaponInHand = weaponInHand;
+    }
+
+    public Weapon getWeaponInHand() {
+        return weaponInHand;
     }
 }

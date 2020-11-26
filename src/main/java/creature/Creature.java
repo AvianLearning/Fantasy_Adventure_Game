@@ -1,3 +1,5 @@
+package creature;
+
 public class Creature {
 
     private String creatureType;

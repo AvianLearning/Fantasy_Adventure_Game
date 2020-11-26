@@ -1,6 +1,6 @@
 package warriors;
 
-import Player;
+import player.Player;
 
 public class Barbarian extends Player {
 

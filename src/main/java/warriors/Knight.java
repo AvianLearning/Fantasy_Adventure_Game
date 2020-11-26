@@ -1,7 +1,7 @@
 package warriors;
 
-import Player;
 import components.Weapon;
+import player.Player;
 
 public class Knight extends Player {
 
