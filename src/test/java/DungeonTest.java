@@ -23,4 +23,10 @@ public class DungeonTest {
     assertEquals(1, dungeon.countTreasure());
     }
 
+    @Test
+    public void canAddCreatureToRoom(){
+        dungeon.addCreature(creature);
+        assertEquals("Orc", dungeon.getEnemies().get(0).getCreatureType());
+    }
+
 }

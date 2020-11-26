@@ -37,6 +37,9 @@ public abstract class Room {
         this.treasureHoard.add(treasure);
     }
 
+    public void addCreature(Creature creature){
+        this.enemies.add(creature);
+        }
 
 
 }
