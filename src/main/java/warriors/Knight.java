@@ -5,20 +5,20 @@ import player.Player;
 
 public class Knight extends Player {
 
+    private int armour;
     protected Weapon weaponInHand;
-    private String helmet;
 
-    public Knight(String name, int healthPoints, Weapon weaponInHand, String helmet) {
+    public Knight(String name, int healthPoints, Weapon weaponInHand, int armour) {
         super(name, healthPoints);
         this.weaponInHand = weaponInHand;
-        this.helmet = helmet;
+        this.armour = armour;
     }
 
     public Weapon getWeaponInHand() {
         return weaponInHand;
     }
 
-    public String getHelmet() {
-        return helmet;
+    public int getArmour() {
+        return armour;
     }
 }
