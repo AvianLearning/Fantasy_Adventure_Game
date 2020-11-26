@@ -15,7 +15,7 @@ public class WizardTest {
 
     @Before
     public void setUp () {
-        creature = new Creature("Bat", 20);
+        creature = new Creature("Bat", 30);
         spell = new Weapon("Fireball", 25);
         wizard = new Wizard("Merlin", 150, "Phoenix Feather", creature, spell);
     }
@@ -34,4 +34,11 @@ public class WizardTest {
     public void hasSpell() {
         assertEquals(25, wizard.getSpell().getDamage());
     }
+
+    @Test
+    public void attackCausesDamage() {
+        wizard.attack(spell, creature);
+        assertEquals(5, creature.getHealthPoints());
+    }
+
 }

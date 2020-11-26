@@ -1,7 +1,8 @@
 package behaviours;
 
 import components.Medicine;
+import player.Player;
 
 public interface IHeal {
-    public int heal(Medicine medicine);
+    public void heal(Player player);
 }

@@ -27,6 +27,10 @@ public abstract class Player {
         return healthPoints;
     }
 
+    public void setHealthPoints(int healthPoints) {
+        this.healthPoints = healthPoints;
+    }
+
     public ArrayList<Treasure> getTreasuresInBag() {
         return treasuresInBag;
     }
