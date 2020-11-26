@@ -1,10 +1,11 @@
 package magicians;
 
+import behaviours.IAttack;
 import components.Weapon;
 import creature.Creature;
 import player.Player;
 
-public class Warlock extends Player {
+public class Warlock extends Player implements IAttack {
 
     private Creature mythicalCreature;
     private Weapon spell;
@@ -21,5 +22,11 @@ public class Warlock extends Player {
 
     public Weapon getSpell() {
         return spell;
+    }
+
+    @Override
+    public void attack(Weapon weapon, Creature creature) {
+        int healthRemaining = creature.getHealthPoints() - weapon.getDamage();
+        creature.setHealthPoints(healthRemaining);
     }
 }

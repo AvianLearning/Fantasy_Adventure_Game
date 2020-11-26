@@ -1,7 +1,8 @@
 package behaviours;
 
 import components.Weapon;
+import creature.Creature;
 
 public interface IAttack {
-    public int attack(Weapon weapon);
+    public void attack(Weapon weapon, Creature creature);
 }

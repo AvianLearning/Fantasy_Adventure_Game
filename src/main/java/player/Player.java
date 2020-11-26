@@ -34,4 +34,6 @@ public abstract class Player {
     public ArrayList<Creature> getEnemiesDefeated() {
         return enemiesDefeated;
     }
+
+
 }

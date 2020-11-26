@@ -18,4 +18,7 @@ public class Creature {
         return healthPoints;
     }
 
+    public void setHealthPoints(int healthPoints) {
+        this.healthPoints = healthPoints;
+    }
 }

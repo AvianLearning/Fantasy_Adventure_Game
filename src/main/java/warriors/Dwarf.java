@@ -1,9 +1,11 @@
 package warriors;
 
+import behaviours.IAttack;
+import creature.Creature;
 import player.Player;
 import components.Weapon;
 
-public class Dwarf extends Player {
+public class Dwarf extends Player implements IAttack {
 
     protected Weapon weaponInHand;
 
@@ -14,5 +16,11 @@ public class Dwarf extends Player {
 
     public Weapon getWeaponInHand() {
         return weaponInHand;
+    }
+
+    @Override
+    public void attack(Weapon weapon, Creature creature) {
+        int healthRemaining = creature.getHealthPoints() - weapon.getDamage();
+        creature.setHealthPoints(healthRemaining);
     }
 }
