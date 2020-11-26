@@ -14,7 +14,7 @@ public class Runner {
         Weapon spell = new Weapon("Fireball", 10);
         Wizard jenken = new Wizard("Jenken", 100, "Stick", orge, spell);
 
-
     }
+
 
 }

@@ -1,6 +1,8 @@
 package player;
 
 import creature.Creature;
+import rooms.Dungeon;
+import rooms.Room;
 import treasure.Treasure;
 
 import java.util.ArrayList;
@@ -37,6 +39,11 @@ public abstract class Player {
 
     public ArrayList<Creature> getEnemiesDefeated() {
         return enemiesDefeated;
+    }
+
+    public void collectTreasure(Treasure treasure, Room room){
+        Treasure treasureToAdd = room.getTreasureHoard().remove(0);
+        treasuresInBag.add(treasureToAdd);
     }
 
 
